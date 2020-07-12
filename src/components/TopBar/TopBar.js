@@ -16,6 +16,7 @@ import NotificationsIcon from "@material-ui/icons/Notifications"
 import MoreIcon from "@material-ui/icons/MoreVert"
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer"
 import DrawerList from "../DrawerList/DrawerList"
+import { NavLink } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     display: "none",
+    textDecoration: "none",
     [theme.breakpoints.up("sm")]: {
       display: "block",
     },
@@ -198,7 +200,14 @@ const TopBar = () => {
           >
             <DrawerList />
           </SwipeableDrawer>
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography
+            className={classes.title}
+            color="inherit"
+            component={NavLink}
+            to="/"
+            variant="h6"
+            noWrap
+          >
             What's up Moscow
           </Typography>
           <div className={classes.search}>
