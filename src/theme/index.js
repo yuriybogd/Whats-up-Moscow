@@ -1,4 +1,5 @@
 import palette from "./palette"
+import typography from "./typography"
 const { createMuiTheme } = require("@material-ui/core")
 
 
@@ -7,6 +8,7 @@ const { createMuiTheme } = require("@material-ui/core")
 
 const theme = createMuiTheme({
   palette,
+  typography
 })
 
 export default theme

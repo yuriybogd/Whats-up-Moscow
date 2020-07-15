@@ -5,7 +5,6 @@ import Divider from "@material-ui/core/Divider"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemIcon from "@material-ui/core/ListItemIcon"
 import ListItemText from "@material-ui/core/ListItemText"
-import InboxIcon from "@material-ui/icons/MoveToInbox"
 import AccountCircleIcon from "@material-ui/icons/AccountCircle"
 import InfoIcon from "@material-ui/icons/Info"
 import SearchIcon from "@material-ui/icons/Search"
@@ -33,12 +32,6 @@ export default function DrawerList() {
           </ListItemIcon>
           <ListItemText primary={"About"} />
         </ListItem>
-        <ListItem button component={NavLink} to="/account">
-          <ListItemIcon>
-            <AccountCircleIcon />
-          </ListItemIcon>
-          <ListItemText primary={"Account"} />
-        </ListItem>
         <ListItem button component={NavLink} to="/search">
           <ListItemIcon>
             <SearchIcon />
@@ -55,6 +48,12 @@ export default function DrawerList() {
       <Divider />
       {/* Private links */}
       <List>
+        <ListItem button component={NavLink} to="/account">
+          <ListItemIcon>
+            <AccountCircleIcon />
+          </ListItemIcon>
+          <ListItemText primary={"Account"} />
+        </ListItem>
         <ListItem button component={NavLink} to="/signin">
           <ListItemIcon>
             <VpnKeyIcon />

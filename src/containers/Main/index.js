@@ -1,6 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import MoscowBg from "./images/MoscowCity.jpg"
+import MoscowBg from "./assets/MoscowCity.jpg"
 import TopBar from "../../components/TopBar/TopBar"
 
 const useStyles = makeStyles((theme) => ({
